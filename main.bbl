@@ -45,6 +45,11 @@ D.~Supernault, ``Pixelfed: A decentralized photo sharing platform,'' 2018. [Onli
 ``Lemmy: A federated link aggregator,'' LemmyNet, 2020. [Online]. Available: \url{https://join-lemmy.org}
 \BIBentrySTDinterwordspacing
 
+\bibitem{snac}
+\BIBentryALTinterwordspacing
+grunfink, ``Snac: A simple, minimalistic activitypub instance,'' 2023. [Online]. Available: \url{https://codeberg.org/grunfink/snac2}
+\BIBentrySTDinterwordspacing
+
 \bibitem{webfinger}
 \BIBentryALTinterwordspacing
 P.~E. Jones, G.~Salgueiro, M.~B. Jones, and J.~Smarr, ``Rfc 7033: Webfinger,'' Tech. Rep., September 2013. [Online]. Available: \url{https://tools.ietf.org/html/rfc7033}
