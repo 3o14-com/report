@@ -1,41 +1,29 @@
 \chapter{METHODOLOGY}
 
-The development of our decentralized microblogging platform for scientific communication was guided by an Agile methodology, emphasizing iterative progress, adaptability, and collaboration among team members. This chapter outlines the key phases of our methodology—Requirement Analysis, System Design, Development, Integration with Decentralized Protocols, Testing—detailing the processes, tools, and techniques employed to realize the platform.
+The development of our decentralized microblogging platform for scientific communication followed an Agile methodology, prioritizing iterative progress, flexibility, and team collaboration. This chapter outlines the key phases—Requirement Analysis, System Design, Development, Integration with Decentralized Protocols, and Testing—highlighting the processes and strategies that shaped the platform’s realization.
 
 \section{Requirement Analysis}
+\label{sec:requirements}
 
-In the requirement analysis phase, we gathered user needs and system specifications by researching online resources, including academic forums, existing social media platforms, and documentation of federated systems like Mastodon and Pixelfed. This approach allowed us to identify key requirements such as secure data sharing, privacy controls, support for mathematical typesetting, and decentralized communication capabilities. We analyzed the strengths and limitations of similar platforms to define core features: user profiles, microblog posts with scientific typesetting support, and federation with other instances. 
+We began by identifying user needs and system requirements through a review of online academic forums, existing social media platforms, and federated system documentation. This research informed essential features: secure data sharing, privacy controls, scientific typesetting support, and decentralized communication. By analyzing the strengths and weaknesses of comparable platforms, we established core functionalities such as user profiles, microblog posts, and cross-instance federation.
 
 \section{System Design}
+\label{sec:design}
 
-The system design phase focused on crafting a scalable and efficient architecture for a federated platform. We adopted the ActivityPub protocol as the foundation for decentralization, designing the system in two main components:
-
-    Backend: A server-side application responsible for user authentication, content management, and federation logic. We designed RESTful APIs to ensure secure and efficient communication, incorporating encryption (e.g., HTTPS) for data exchange.
-    Frontend: A mobile-first interface built to integrate with backend APIs, prioritizing usability for posting and viewing scientific content on diverse devices.
-
+The design phase centered on creating a scalable, federated architecture. We chose the ActivityPub protocol to enable decentralization, structuring the system around a backend for core logic and a mobile-first frontend for user interaction. Emphasis was placed on secure data exchange and usability across devices, with RESTful APIs as the backbone of component communication.
 
 \section{Development}
+\label{sec:development}
 
-Development was executed in two streams—backend and frontend—following Agile sprints. This iterative approach enabled incremental progress and regular adjustments based on technical challenges and evolving priorities.
-
-    Backend Development: We implemented the backend using Node.js with Hono, a lightweight and fast framework chosen for its performance and simplicity. APIs were developed for user authentication (using JWT tokens), content creation (posts with mathematical expressions), and federation logic. PostgreSQL was selected as the database due to its robustness and support for structured data, ideal for managing user and post information in a decentralized context. Development tasks were divided into manageable units (e.g., "Set up Hono routing for posts," "Implement PostgreSQL schema for users"), tracked via GitHub Projects, and reviewed among the team members.
-    Frontend Development: The frontend was built using React Native, enabling a cross-platform mobile application compatible with both iOS and Android. We integrated MathJax to render LaTeX-based mathematical expressions in real time, fulfilling the need for scientific typesetting. The UI was iteratively enhanced through sprint reviews, with feedback from team testing shaping improvements like smoother navigation and responsive layouts.
-
+Development proceeded in iterative Agile sprints, split into backend and frontend streams. This approach allowed continuous refinement based on emerging technical needs and team feedback. The backend handled authentication, content management, and federation, while the frontend focused on delivering an intuitive interface for scientific content creation and consumption.
 
 \section{Integration with Decentralized Protocols}
+\label{sec:integration}
 
-Federation was implemented using Fedify, a TypeScript framework designed for building ActivityPub-compliant applications. Fedify simplified the integration process by providing pre-built tools for handling key ActivityPub components:
-\begin{itemize}
-  \item{Configured "inbox" and "outbox" endpoints for each user to manage incoming and outgoing activities (e.g., posting, following).}
-\item{Enabled server-to-server communication, allowing our platform instances to interoperate with other ActivityPub-based systems like Mastodon.}
-  \end{itemize}
-Integration was validated in each sprint, with Fedify’s TypeScript support enhancing code reliability and easing debugging.
+Federation was a cornerstone of the platform, achieved through ActivityPub compliance. We implemented server-to-server communication and user activity management (e.g., posting, following) to ensure interoperability with other federated systems. This phase was validated iteratively to confirm seamless cross-platform interaction.
 
 \section{Testing}
+\label{sec:testing}
 
-Testing was embedded throughout the development process to ensure system functionality and stability. We adopted a multi-layered testing approach:
-
-\textbf{Unit Testing}: Individual components, such as authentication endpoints and typesetting rendering, were tested using Jest for the backend and React Native Testing Library for the frontend.
-
-\textbf{Integration Testing}: Interactions between backend, frontend, and Fedify’s federation features were validated using tools like Postman for API testing and manual checks across test instances.
+Testing was integrated throughout development to maintain functionality and reliability. We employed a multi-layered strategy, including unit tests for individual components and integration tests for system-wide interactions, ensuring robustness at every stage.
 
