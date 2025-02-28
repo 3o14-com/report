@@ -1,3 +1,16 @@
 \chapter{CONCLUSION}
 
-Here we write about what metohods we used to make the project possible.
+In this project, we developed a basic social media server that implements parts of the \cite{ActivityPub} protocol. This allows users on our platform to interact with others on existing servers that follow the same protocol. In addition to our server, we also designed a clean and clutter-free frontend that supports not only our server but also other similar platforms, such as Mastodon\cite{mastodon}.
+
+Users of our frontend can write mathematical text within plain text posts by leveraging the power of LaTeX through MathJax\cite{MathJax}.
+
+Our server currently supports a single user, but with the ability to create multiple accounts for different purposes. Despite this single-user limitation, it is still possible to form a broader social network through ActivityPub, enabling communication across federated services. As a result, we have created a social media platform tailored for scientific and mathematical discussions while maintaining interoperability with the existing user base of ActivityPub-compliant services.
+
+\section{Further Improvments}
+We have implemented a basic social media platform with minimal interations. As such, there are few improvments to be made:
+\begin{itemize}
+  \item The server can be extended to support multiple users.
+  \item The frontend can be enhanced to allow editing of posted content and provide more granular privacy settings.
+  \item The server can be improved with robust moderation tools, such as blocking and filtering.
+  \item LaTeX/MathJax auto-completion can be added to enhance mathematical input in the frontend.
+\end{itemize}
