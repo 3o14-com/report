@@ -55,4 +55,9 @@ grunfink, ``Snac: A simple, minimalistic activitypub instance,'' 2023. [Online].
 P.~E. Jones, G.~Salgueiro, M.~B. Jones, and J.~Smarr, ``Rfc 7033: Webfinger,'' Tech. Rep., September 2013. [Online]. Available: \url{https://tools.ietf.org/html/rfc7033}
 \BIBentrySTDinterwordspacing
 
+\bibitem{MathJax}
+\BIBentryALTinterwordspacing
+{MathJax Consortium}, ``{MathJax: A JavaScript display engine for mathematics},'' 2024. [Online]. Available: \url{https://www.mathjax.org/}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
