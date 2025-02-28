@@ -14,7 +14,7 @@ Spandan xito user and account creation css milau.
 
 \section{Posting Status With Latex}
 
-Users can write mathematical expressions using LaTeX syntax while composing a post. As shown in Figure 5.2, the application provides a live preview of the rendered LaTeX output, allowing users to verify their equations before posting. Once published, the post is displayed in the timeline with properly formatted LaTeX expressions, as demonstrated in Figure 5.3. This feature ensures that complex mathematical notations, scientific formulas, and equations are easily readable and visually appealing in posts.
+Users can include mathematical expressions within plaintext using LaTeX syntax while composing a post. As shown in Figure~\ref{fig:writing_post}, the application provides a live preview of the rendered LaTeX output, allowing users to verify their equations before posting. Once published, the post is displayed in the timeline with properly formatted LaTeX expressions, as demonstrated in Figure~\ref{fig:post_in_timeline}. This feature ensures that complex mathematical notations, scientific formulas, and equations are easily readable and visually appealing in posts.
 
 \begin{figure}[htbp]
   \centering
@@ -23,6 +23,7 @@ Users can write mathematical expressions using LaTeX syntax while composing a po
     \centering
     \includegraphics[width=\linewidth]{Graphics/writingpost.png}
     \caption{Live rendering of latex while writing post}
+    \label{fig:writing_post}
   \end{minipage}
   \hfill % adds some space between images
   % Second image in its own minipage
@@ -30,11 +31,86 @@ Users can write mathematical expressions using LaTeX syntax while composing a po
     \centering
     \includegraphics[width=\linewidth]{Graphics/postintimeline.png}
     \caption{Rendered post with latex in timeline}
+    \label{fig:post_in_timeline}
   \end{minipage}
 \end{figure}
 
 \clearpage
 
 \section{Interaction with Remote Accounts}
+User, using their account, can interact with other users on different instances or services using ActivityPub\cite{ActivityPub} constructs like Follow, Like, Boost, Reply. 
 
+\subsection{Searching and Following Remote Accounts}
+Users can search for remote accounts by entering the handle associated with an account on a different instance. As shown in Figure~\ref{fig:search_follow}, the search results display matching accounts along with relevant details, allowing users to identify and interact with the desired profile.
+
+Once a remote account is found, users can visit its profile page (Figure~\ref{fig:remote_profile}), where they can view posts, follow the account, and engage through actions like liking or boosting posts. This seamless integration enables cross-instance communication within the network.
+\begin{figure}[htbp]
+  \centering
+  % First image in its own minipage
+  \begin{minipage}[b]{0.45\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{Graphics/remoteaccountsearchfollow.png}
+    \caption{Searching and following remote accounts}
+    \label{fig:search_follow}
+  \end{minipage}
+  \hfill % adds some space between images
+  % Second image in its own minipage
+  \begin{minipage}[b]{0.45\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{Graphics/remoteaccountprofile.png}
+    \caption{Profile page of remote account}
+    \label{fig:remote_profile}
+  \end{minipage}
+\end{figure}
+
+
+\clearpage
+
+\subsection{Remote Posts: Like, Boost, Reply}
+Users can interact with remote posts in various ways, including liking, boosting (similar to retweeting), and replying. As shown in Figure~\ref{fig:like_reboost_reply}, these actions allow users to engage with posts across different instances seamlessly.
+
+Additionally, users can view all replies to a post in a threaded format. Figure~\ref{fig:post_replies} illustrates how responses are displayed, ensuring clear and organized discussions.
+
+\begin{figure}[htbp]
+  \centering
+  % First image in its own minipage
+  \begin{minipage}[b]{0.45\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{Graphics/replylikereboost.png}
+    \caption{Liking, reboosting and replying to a post}
+    \label{fig:like_reboost_reply}
+  \end{minipage}
+  \hfill % adds some space between images
+  % Second image in its own minipage
+  \begin{minipage}[b]{0.45\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{Graphics/postreplies.png}
+    \caption{Viewing all the replies to a post}
+    \label{fig:post_replies}
+  \end{minipage}
+\end{figure}
+
+\section{More: Notifications, Followers and Following}
+Users can keep track of their interactions through notifications, as shown in Figure~\ref{fig:notifications}, which provides updates on likes, replies, and follows.
+
+Additionally, users can manage their connections through the Following and Followers list (Figure~\ref{fig:following_list}), where they can see the accounts they are following and those who follow them.
+
+\begin{figure}[htbp]
+  \centering
+  % First image in its own minipage
+  \begin{minipage}[b]{0.45\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{Graphics/Notifications.png}
+    \caption{Notifications of an account}
+    \label{fig:notifications}
+  \end{minipage}
+  \hfill % adds some space between images
+  % Second image in its own minipage
+  \begin{minipage}[b]{0.45\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{Graphics/followerandfollowing.png}
+    \caption{Following list}
+    \label{fig:following_list}
+  \end{minipage}
+\end{figure}
 
